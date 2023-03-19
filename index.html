@@ -372,15 +372,89 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer_form">
+            <p class="footer_form_title">
+                Subscribe
+            </p>
+
+                <form class="footer_form_btn">
+                    <label for="mail"></label>
+                    <input 
+                    type="email" 
+                    name="mail"
+                    id="mail"
+                    placeholder="E-mail" 
+                    class="footer_mail">
+                    <button class="footer_mail_btn" type="submit">
+                        <span class="footer_btn_text">
+                        Subscribe
+                        </span>
+                        <svg class="social_link_svg_footer" width="24px" height="24px">
+                            <use href="./images_1/symbol.svg#icon-telegram">
+                            </use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden " data-modal>
        <div class="modal">
           <button type="button" class="close_btn" data-modal-close>
             <svg class="close_btn_svg" width="8px" height="8px">
                 <use href="./images_1/symbol.svg#icon-close-black"></use>
             </svg>
-          </button>              
+          </button>
+        <form class="modal_form">
+            <p class="modal_title">Leave your contacts and we will call you back</p>
+                <div class="form_g">
+                    <label for="name" class="form_label">Name</label>
+                    <div class="box_form_icon">
+                    <input type="text" name="name" id="name" class="input_form">
+                        <svg class="form_icon" width="18px" height="18px">
+                            <use href="./images_1/symbol.svg#icon-person">
+                        </use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form_g">
+                    <label for="tel" class="form_label">Phone</label>
+                    <div class="box_form_icon">
+                        <input type="tel" name="tel" id="tel" class="input_form">
+                        <svg class="form_icon" width="18px" height="18px">
+                        <use href="./images_1/symbol.svg#icon-person">
+                        </use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form_g">
+                    <label for="email" class="form_label">Email</label>
+                    <div class="box_form_icon">
+                        <input type="email" name="email" id="email" class="input_form">
+                        <svg class="form_icon" width="18px" height="18px">
+                            <use href="./images_1/symbol.svg#icon-person">
+                            </use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form_g">
+                    <label for="comment" class="form_label">Comment</label>
+                    <textarea class="comment" name="comment" id="comment" placeholder="Text input"></textarea>
+                </div>
+                <div class="form_check">
+                        <label class="permission" for="permission"> <input  type="checkbox" name="permission" id="permission" class="permission_check">
+                            <span class="form_icon_check">
+                                <svg class="form_icon_check_svg" width="10" height="8">
+                                    <use href="./images_1/symbol.svg#icon-vector"></use>
+                                </svg>
+                            </span>     
+                        I accept the terms and conditions of the <a class="form_link" href="3">Privacy Policy</a>
+                    </label>
+                </div>
+                <div class="form_check">
+                    <button type="submit" class="send_form">Send</button>
+                </div>
+        </form>
        </div> 
     </div>
     <script src="./js/modal.js"></script>
