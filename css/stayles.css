@@ -359,10 +359,11 @@ body{
     display: flex;
 }
 .footer_form{
-    margin-left: 80px;
+    margin-left: auto;
 }
 .footer_form_btn{
     display: flex;
+    position: relative;
 }
 .footer_mail{
     border: 1px solid #FFFFFF;
@@ -371,9 +372,13 @@ body{
     color: #FFFFFF;
     padding: 8px 16px;
     margin-bottom: 0;
-    width: 240px;
+    width: 264px;
     height: 40px;
     outline: none;
+}
+.footer_mail_label{
+    visibility: hidden;
+    position: absolute;
 }
 .footer_mail::placeholder {
     font-family: 'Roboto';
